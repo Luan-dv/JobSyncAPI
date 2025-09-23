@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "JobSync.Exception/1.0.0": {
+        "runtime": {
+          "JobSync.Exception.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JobSync.Exception/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Domain\bin\Debug\net8.0\JobSync.Domain.deps.json
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Domain\bin\Debug\net8.0\JobSync.Domain.dll
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Domain\bin\Debug\net8.0\JobSync.Domain.pdb
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Domain\obj\Debug\net8.0\JobSync.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Domain\obj\Debug\net8.0\JobSync.Domain.AssemblyInfoInputs.cache
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Domain\obj\Debug\net8.0\JobSync.Domain.AssemblyInfo.cs
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Domain\obj\Debug\net8.0\JobSync.Domain.csproj.CoreCompileInputs.cache
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Domain\obj\Debug\net8.0\JobSync.Domain.dll
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Domain\obj\Debug\net8.0\refint\JobSync.Domain.dll
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Domain\obj\Debug\net8.0\JobSync.Domain.pdb
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Domain\obj\Debug\net8.0\ref\JobSync.Domain.dll

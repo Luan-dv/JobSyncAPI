@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JobSync.Communication\JobSync.Communication.csproj" />
+    <ProjectReference Include="..\JobSync.Domain\JobSync.Domain.csproj" />
+    <ProjectReference Include="..\JobSync.Exception\JobSync.Exception.csproj" />
+  </ItemGroup>
+
+</Project>

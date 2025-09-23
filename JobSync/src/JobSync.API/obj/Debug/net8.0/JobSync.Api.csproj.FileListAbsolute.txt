@@ -1,0 +1,8 @@
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.API\obj\Debug\net8.0\JobSync.Api.csproj.AssemblyReference.cache
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.API\obj\Debug\net8.0\JobSync.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.API\obj\Debug\net8.0\JobSync.Api.AssemblyInfoInputs.cache
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.API\obj\Debug\net8.0\JobSync.Api.AssemblyInfo.cs
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.API\obj\Debug\net8.0\JobSync.Api.csproj.CoreCompileInputs.cache
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.API\obj\Debug\net8.0\JobSync.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.API\obj\Debug\net8.0\JobSync.Api.MvcApplicationPartsAssemblyInfo.cache

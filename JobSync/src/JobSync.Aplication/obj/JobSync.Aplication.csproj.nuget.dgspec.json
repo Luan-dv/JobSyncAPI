@@ -1,0 +1,278 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Aplication\\JobSync.Aplication.csproj": {}
+  },
+  "projects": {
+    "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Aplication\\JobSync.Aplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Aplication\\JobSync.Aplication.csproj",
+        "projectName": "JobSync.Aplication",
+        "projectPath": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Aplication\\JobSync.Aplication.csproj",
+        "packagesPath": "C:\\Users\\Luan\\.nuget\\packages\\",
+        "outputPath": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Aplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Communication\\JobSync.Communication.csproj": {
+                "projectPath": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Communication\\JobSync.Communication.csproj"
+              },
+              "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Domain\\JobSync.Domain.csproj": {
+                "projectPath": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Domain\\JobSync.Domain.csproj"
+              },
+              "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Exception\\JobSync.Exception.csproj": {
+                "projectPath": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Exception\\JobSync.Exception.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Communication\\JobSync.Communication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Communication\\JobSync.Communication.csproj",
+        "projectName": "JobSync.Communication",
+        "projectPath": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Communication\\JobSync.Communication.csproj",
+        "packagesPath": "C:\\Users\\Luan\\.nuget\\packages\\",
+        "outputPath": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Communication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Domain\\JobSync.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Domain\\JobSync.Domain.csproj",
+        "projectName": "JobSync.Domain",
+        "projectPath": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Domain\\JobSync.Domain.csproj",
+        "packagesPath": "C:\\Users\\Luan\\.nuget\\packages\\",
+        "outputPath": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Exception\\JobSync.Exception.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Exception\\JobSync.Exception.csproj",
+        "projectName": "JobSync.Exception",
+        "projectPath": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Exception\\JobSync.Exception.csproj",
+        "packagesPath": "C:\\Users\\Luan\\.nuget\\packages\\",
+        "outputPath": "C:\\Programação\\Projetos\\ApiJobSync\\JobSyncAPI\\JobSync\\src\\JobSync.Exception\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

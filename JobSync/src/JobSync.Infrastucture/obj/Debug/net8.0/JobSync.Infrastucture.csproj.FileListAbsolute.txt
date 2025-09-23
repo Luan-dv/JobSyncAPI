@@ -1,0 +1,15 @@
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\bin\Debug\net8.0\JobSync.Infrastucture.deps.json
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\bin\Debug\net8.0\JobSync.Infrastucture.dll
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\bin\Debug\net8.0\JobSync.Infrastucture.pdb
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\bin\Debug\net8.0\JobSync.Domain.dll
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\bin\Debug\net8.0\JobSync.Domain.pdb
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\JobSync.Infrastucture.csproj.AssemblyReference.cache
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\JobSync.Infrastucture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\JobSync.Infrastucture.AssemblyInfoInputs.cache
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\JobSync.Infrastucture.AssemblyInfo.cs
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\JobSync.Infrastucture.csproj.CoreCompileInputs.cache
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\JobSync..F71B86D9.Up2Date
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\JobSync.Infrastucture.dll
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\refint\JobSync.Infrastucture.dll
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\JobSync.Infrastucture.pdb
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\ref\JobSync.Infrastucture.dll

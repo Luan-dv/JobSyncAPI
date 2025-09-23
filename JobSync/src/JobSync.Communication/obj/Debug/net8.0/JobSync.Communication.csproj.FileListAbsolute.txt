@@ -1,0 +1,11 @@
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Communication\bin\Debug\net8.0\JobSync.Communication.deps.json
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Communication\bin\Debug\net8.0\JobSync.Communication.dll
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Communication\bin\Debug\net8.0\JobSync.Communication.pdb
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Communication\obj\Debug\net8.0\JobSync.Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Communication\obj\Debug\net8.0\JobSync.Communication.AssemblyInfoInputs.cache
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Communication\obj\Debug\net8.0\JobSync.Communication.AssemblyInfo.cs
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Communication\obj\Debug\net8.0\JobSync.Communication.csproj.CoreCompileInputs.cache
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Communication\obj\Debug\net8.0\JobSync.Communication.dll
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Communication\obj\Debug\net8.0\refint\JobSync.Communication.dll
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Communication\obj\Debug\net8.0\JobSync.Communication.pdb
+C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Communication\obj\Debug\net8.0\ref\JobSync.Communication.dll
