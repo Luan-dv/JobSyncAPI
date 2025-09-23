@@ -10,8 +10,4 @@
     <ProjectReference Include="..\JobSync.Domain\JobSync.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DataAcess\" />
-  </ItemGroup>
-
 </Project>

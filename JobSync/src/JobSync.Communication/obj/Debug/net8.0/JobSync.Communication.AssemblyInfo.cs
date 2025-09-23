@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobSync.Communication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e9d3b1e7324ec78a49e973ed7c877b5a97258cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2464990789d62c1dd7e5124800f9a531c871875e")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobSync.Communication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobSync.Communication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
