@@ -1,10 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutoMapper;
+using JobSync.Communication.Requests;
+using JobSync.Domain.Entities;
+using System.Reflection.Metadata;
 
 namespace JobSync.Aplication.AutoMapper;
-internal class AutoMapping
+public class AutoMapping : Profile
 {
+    public AutoMapping()
+    {
+        RequestToEntity();
+      
+    }
+    private void RequestToEntity()
+    {
+        CreateMap<RequestRegisterUserJson, User>()
+            .ForMember(destUser => destUser.Password, config => config.Ignore());
+    }
 }
