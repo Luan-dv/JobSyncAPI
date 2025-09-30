@@ -1,3 +1,6 @@
+using JobSync.Api.Filters;
+using JobSync.Api.Middleware;
+using JobSync.Infrastucture;
 using Microsoft.AspNetCore.Mvc.Filters;
 
 var builder = WebApplication.CreateBuilder(args);

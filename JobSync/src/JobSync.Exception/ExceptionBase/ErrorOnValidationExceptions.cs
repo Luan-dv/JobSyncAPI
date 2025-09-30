@@ -1,10 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
 
 namespace JobSync.Exception.ExceptionBase;
-internal class ErrorOnValidationExceptions
+public class ErrorOnValidationExceptions : JobSyncException
 {
+    private readonly List<string> _errors;
+    public override int StatusCode => (int)HttpStatusCode.BadRequest;
+    public ErrorOnValidationExceptions(List<string> errorMessages) : base(string.Empty)
+    {
+        _errors = errorMessages;
+    }
+    public override List<string> GetErrors()
+    {
+        return _errors;
+    }
 }

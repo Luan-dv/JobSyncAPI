@@ -1,10 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
 
 namespace JobSync.Exception.ExceptionBase;
-internal class NotFoundException
+public class NotFoundException : JobSyncException
 {
+    public NotFoundException(string message) : base(message)
+    {
+        
+    }
+    public override int StatusCode => (int)HttpStatusCode.NotFound;
+
+    public override List<string> GetErrors()
+    {
+        return new List<string> { Message };
+    }   
 }

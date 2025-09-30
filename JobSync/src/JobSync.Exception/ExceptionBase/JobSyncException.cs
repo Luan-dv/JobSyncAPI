@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace JobSync.Exception.ExceptionBase;
-internal class JobSyncException
+﻿namespace JobSync.Exception.ExceptionBase;
+public abstract class JobSyncException : SystemException
 {
+    protected JobSyncException(string message) : base(message)
+    {
+
+    }
+    public abstract int StatusCode { get; }
+    public abstract List<string> GetErrors();
 }

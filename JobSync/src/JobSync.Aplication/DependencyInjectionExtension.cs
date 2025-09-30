@@ -1,10 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using JobSync.Aplication.AutoMapper;
+using JobSync.Aplication.UseCases.Users.Register;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace JobSync.Aplication;
-internal class DependencyInjectionExtension
+public static class DependencyInjectionExtension
 {
+    public static void AddApplication(this IServiceCollection services)
+    {
+        AddAutoMapper(services);
+        AddUseCases(services);
+
+    }
+    private static void AddAutoMapper(IServiceCollection services)
+    {
+        services.AddAutoMapper(typeof(AutoMapping));
+
+    }
+    private static void AddUseCases(IServiceCollection services)
+    {
+ 
+        services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
+    }
+
 }

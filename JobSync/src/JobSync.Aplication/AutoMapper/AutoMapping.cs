@@ -15,5 +15,6 @@ public class AutoMapping : Profile
     {
         CreateMap<RequestRegisterUserJson, User>()
             .ForMember(destUser => destUser.Password, config => config.Ignore());
+        //fazer para cpf tbm 
     }
 }

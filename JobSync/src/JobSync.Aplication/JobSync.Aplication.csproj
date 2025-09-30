@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\JobSync.Communication\JobSync.Communication.csproj" />
     <ProjectReference Include="..\JobSync.Domain\JobSync.Domain.csproj" />
     <ProjectReference Include="..\JobSync.Exception\JobSync.Exception.csproj" />
