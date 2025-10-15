@@ -3,7 +3,7 @@
 namespace JobSync.Exception.ExceptionBase;
 public class InvalidLoginException : JobSyncException
 {
-    public InvalidLoginException() : base("senha ou email inválido") //trocar depois
+    public InvalidLoginException() : base(ResourceErrorMessages.INVALID_PASSWORD_OR_EMAIL) //trocar depois
     {
 
     }

@@ -66,11 +66,11 @@ public class RegisterUserUseCase : IRegisterUserUseCase
        
         if (emailExtist)
         {
-            result.Errors.Add(new ValidationFailure(string.Empty, ResourceErrorMessages.EMAIL_REQUIRED));
+            result.Errors.Add(new ValidationFailure(string.Empty, ResourceErrorMessages.EMAIL_DOES_NOT_EXIST));
         }
         if (phoneExtist)
         {
-            result.Errors.Add(new ValidationFailure(string.Empty, ResourceErrorMessages.PHONE_NUMBER_REQUIRED));
+            result.Errors.Add(new ValidationFailure(string.Empty, ResourceErrorMessages.PHONE_DOES_NOT_EXIST));
         }
         
         if (result.IsValid == false)

@@ -117,13 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AZ_MAIUSCULO" xml:space="preserve">
+    <value>A senha deve conter pelo menos uma letra maiúscula (A-Z)</value>
+  </data>
+  <data name="AZ_MINUSCULO" xml:space="preserve">
+    <value>A senha deve conter pelo menos uma letra minúscula (a-z)</value>
+  </data>
+  <data name="CARACTER_ESPECIAL" xml:space="preserve">
+    <value>A senha deve conter pelo menos um caractere especial (ex: !@#$%)</value>
+  </data>
+  <data name="CPF_INVALIDO" xml:space="preserve">
+    <value>O CPF informado é inválido (número repetido)</value>
+  </data>
+  <data name="CPF_NAO_EXISTE" xml:space="preserve">
+    <value>O CPF informado não é válido</value>
+  </data>
+  <data name="CPF_OBRIGATORIO" xml:space="preserve">
+    <value>O CPF é obrigatório e deve conter 11 dígitos</value>
+  </data>
+  <data name="EMAIL_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Esse email não existe</value>
+  </data>
+  <data name="EMAIL_EMPTY" xml:space="preserve">
+    <value>Email vazio</value>
+  </data>
+  <data name="EMAIL_INVALID" xml:space="preserve">
+    <value>Email inválido</value>
+  </data>
   <data name="EMAIL_REQUIRED" xml:space="preserve">
     <value>É necessário conter Email</value>
+  </data>
+  <data name="GENDER_INVALID" xml:space="preserve">
+    <value>Gênero inválido</value>
   </data>
   <data name="GENDER_REQUIRED" xml:space="preserve">
     <value>Por favor informe seu gênero</value>
   </data>
+  <data name="INVALID_PASSWORD_OR_EMAIL" xml:space="preserve">
+    <value>Senha ou email inválido</value>
+  </data>
+  <data name="NAME_EMPTY" xml:space="preserve">
+    <value>Nome vazio</value>
+  </data>
+  <data name="NULL_PHONE" xml:space="preserve">
+    <value>Telefone nulo</value>
+  </data>
+  <data name="NUMBER_INVALID" xml:space="preserve">
+    <value>Número inválido</value>
+  </data>
+  <data name="NUMERO_ZERO_A_NOVE" xml:space="preserve">
+    <value>A senha deve conter pelo menos um número (0-9)</value>
+  </data>
+  <data name="PHONE_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Esse telefone não existe</value>
+  </data>
   <data name="PHONE_NUMBER_REQUIRED" xml:space="preserve">
     <value>É necessário conter número de Telefone</value>
+  </data>
+  <data name="TELEFONE_EMPTY" xml:space="preserve">
+    <value>Telefone vazio</value>
   </data>
 </root>

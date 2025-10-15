@@ -19,7 +19,7 @@ public partial class PasswordValidator<T> : PropertyValidator<T, string>
     {
         if (string.IsNullOrWhiteSpace(password))
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED); //trocar todos por enquanto para testes
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED);
             return false;
         }
         if (password.Length < 8)
@@ -28,27 +28,27 @@ public partial class PasswordValidator<T> : PropertyValidator<T, string>
             return false;
         }
 
-        if (UpperCaseLetter().IsMatch(password) == false)//pelo menos uma letra de A a Z
+        if (UpperCaseLetter().IsMatch(password) == false)
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED); 
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.AZ_MAIUSCULO); 
             return false;
 
         }
-        if (LowerCaseLetter().IsMatch(password) == false)//pelo menos uma letra de A a Z
+        if (LowerCaseLetter().IsMatch(password) == false)
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED); 
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.AZ_MINUSCULO); 
             return false;
 
         }
-        if (Numbers().IsMatch(password) == false)//pelo menos uma letra de A a Z
+        if (Numbers().IsMatch(password) == false)
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED); 
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.NUMERO_ZERO_A_NOVE); 
             return false;
 
         }
         if (SpecialSymbols().IsMatch(password) == false)
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED); 
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.CARACTER_ESPECIAL); 
             return false;
         }
 

@@ -61,11 +61,101 @@ namespace JobSync.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A senha deve conter pelo menos uma letra maiúscula (A-Z).
+        /// </summary>
+        public static string AZ_MAIUSCULO {
+            get {
+                return ResourceManager.GetString("AZ_MAIUSCULO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A senha deve conter pelo menos uma letra minúscula (a-z).
+        /// </summary>
+        public static string AZ_MINUSCULO {
+            get {
+                return ResourceManager.GetString("AZ_MINUSCULO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A senha deve conter pelo menos um caractere especial (ex: !@#$%).
+        /// </summary>
+        public static string CARACTER_ESPECIAL {
+            get {
+                return ResourceManager.GetString("CARACTER_ESPECIAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O CPF informado é inválido (número repetido).
+        /// </summary>
+        public static string CPF_INVALIDO {
+            get {
+                return ResourceManager.GetString("CPF_INVALIDO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O CPF informado não é válido.
+        /// </summary>
+        public static string CPF_NAO_EXISTE {
+            get {
+                return ResourceManager.GetString("CPF_NAO_EXISTE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O CPF é obrigatório e deve conter 11 dígitos.
+        /// </summary>
+        public static string CPF_OBRIGATORIO {
+            get {
+                return ResourceManager.GetString("CPF_OBRIGATORIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Esse email não existe.
+        /// </summary>
+        public static string EMAIL_DOES_NOT_EXIST {
+            get {
+                return ResourceManager.GetString("EMAIL_DOES_NOT_EXIST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email vazio.
+        /// </summary>
+        public static string EMAIL_EMPTY {
+            get {
+                return ResourceManager.GetString("EMAIL_EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email inválido.
+        /// </summary>
+        public static string EMAIL_INVALID {
+            get {
+                return ResourceManager.GetString("EMAIL_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to É necessário conter Email.
         /// </summary>
         public static string EMAIL_REQUIRED {
             get {
                 return ResourceManager.GetString("EMAIL_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gênero inválido.
+        /// </summary>
+        public static string GENDER_INVALID {
+            get {
+                return ResourceManager.GetString("GENDER_INVALID", resourceCulture);
             }
         }
         
@@ -79,11 +169,74 @@ namespace JobSync.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Senha ou email inválido.
+        /// </summary>
+        public static string INVALID_PASSWORD_OR_EMAIL {
+            get {
+                return ResourceManager.GetString("INVALID_PASSWORD_OR_EMAIL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nome vazio.
+        /// </summary>
+        public static string NAME_EMPTY {
+            get {
+                return ResourceManager.GetString("NAME_EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Telefone nulo.
+        /// </summary>
+        public static string NULL_PHONE {
+            get {
+                return ResourceManager.GetString("NULL_PHONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Número inválido.
+        /// </summary>
+        public static string NUMBER_INVALID {
+            get {
+                return ResourceManager.GetString("NUMBER_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A senha deve conter pelo menos um número (0-9).
+        /// </summary>
+        public static string NUMERO_ZERO_A_NOVE {
+            get {
+                return ResourceManager.GetString("NUMERO_ZERO_A_NOVE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Esse telefone não existe.
+        /// </summary>
+        public static string PHONE_DOES_NOT_EXIST {
+            get {
+                return ResourceManager.GetString("PHONE_DOES_NOT_EXIST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to É necessário conter número de Telefone.
         /// </summary>
         public static string PHONE_NUMBER_REQUIRED {
             get {
                 return ResourceManager.GetString("PHONE_NUMBER_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Telefone vazio.
+        /// </summary>
+        public static string TELEFONE_EMPTY {
+            get {
+                return ResourceManager.GetString("TELEFONE_EMPTY", resourceCulture);
             }
         }
     }
