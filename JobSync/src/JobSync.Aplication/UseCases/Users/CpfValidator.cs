@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.Validators;
+using JobSync.Exception;
 using System.Text.RegularExpressions;
 
 namespace JobSync.Aplication.UseCases.Users;
@@ -40,19 +41,19 @@ public partial class CpfValidator<T> : PropertyValidator<T, string>
 
         if (string.IsNullOrWhiteSpace(cleanedCpf) || cleanedCpf.Length != 11)
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, );
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.GENDER_REQUIRED);
             return false;
         }
 
         if (IsRepeatedDigits(cleanedCpf))
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, );
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.GENDER_REQUIRED);
             return false;
         }
 
         if (!IsCpfValid(cleanedCpf))
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, );
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.GENDER_REQUIRED);
             return false;
         }
 
@@ -76,6 +77,9 @@ public partial class CpfValidator<T> : PropertyValidator<T, string>
     /// <returns>Retorna <c>true</c> se os dígitos forem repetidos; caso contrário, <c>false</c>.</returns>
     private static bool IsRepeatedDigits(string cpf)
     {
+        if (string.IsNullOrEmpty(cpf) || cpf.Length < 11)
+            return false;
+
         return new string(cpf[0], 11) == cpf;
     }
 

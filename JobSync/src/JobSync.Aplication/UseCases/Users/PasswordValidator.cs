@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.Validators;
+using JobSync.Exception;
 using System.Text.RegularExpressions;
 
 namespace JobSync.Aplication.UseCases.Users;
@@ -18,37 +19,37 @@ public partial class PasswordValidator<T> : PropertyValidator<T, string>
     {
         if (string.IsNullOrWhiteSpace(password))
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages);
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED); //trocar todos por enquanto para testes
             return false;
         }
         if (password.Length < 8)
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages);
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED);
             return false;
         }
 
         if (UpperCaseLetter().IsMatch(password) == false)//pelo menos uma letra de A a Z
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages); 
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED); 
             return false;
 
         }
         if (LowerCaseLetter().IsMatch(password) == false)//pelo menos uma letra de A a Z
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages); 
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED); 
             return false;
 
         }
         if (Numbers().IsMatch(password) == false)//pelo menos uma letra de A a Z
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.UNKNOWN_ERROR); 
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED); 
             return false;
 
         }
         if (SpecialSymbols().IsMatch(password) == false)
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.UNKNOWN_ERROR); 
-
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED); 
+            return false;
         }
 
         return true;

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobSync.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fe8550d0a97ec314c3c6aef1fb038a47d529fca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c87570c2f1db8d94be0c9b82ba859b53e2f6319")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobSync.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobSync.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

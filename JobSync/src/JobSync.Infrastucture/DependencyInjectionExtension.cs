@@ -8,16 +8,21 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace JobSync.Infrastucture;
-public class DependencyInjectionExtension
+public static class DependencyInjectionExtension
 {
     public static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration) //this é uma extensão de IServiceCollection
     {
         AddDbContext(services, configuration);
-
+        AddToken(services, configuration);
         AddRepositories(services);
 
 
         services.AddScoped<IPasswordEncripter, Security.Cryptography.Bcrypt>(); 
+    }
+    private static void AddToken(this IServiceCollection services, IConfiguration configuration)
+    {
+        var expirationTimeMinutes = configuration.GetValue<uint>("Settings:Jwt:ExpiresMinutes");
+        var signingKey = configuration.GetValue<string>("Settings:Jwt:SigningKey");
     }
 
     private static void AddRepositories(IServiceCollection services)

@@ -1,5 +1,6 @@
 ﻿using JobSync.Communication.Responses;
 using JobSync.Exception.ExceptionBase;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Runtime.InteropServices;
 
@@ -11,12 +12,12 @@ public class ExceptionFilter : IExceptionFilter
     {
         if(context.Exception is JobSyncException)
         {
-            HandlerProejectException();
+            HandlerProejectException(context);
 
         }
         else
         {
-
+            ThrowUnknownError(context);
         }
     }
 
@@ -24,9 +25,20 @@ public class ExceptionFilter : IExceptionFilter
     {
         var jobSyncException = (JobSyncException)context.Exception; //casting
         var errorResponse = new ResponseErrorJson(jobSyncException.GetErrors());
+
+        context.HttpContext.Response.StatusCode = jobSyncException.StatusCode;
+
+        context.Result = new ObjectResult(errorResponse);
+
     }
 
+    private void ThrowUnknownError(ExceptionContext context)
+    {
+        var errorResponse = new ResponseErrorJson("Bateu aqui");
 
+        context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
+        context.Result = new ObjectResult(errorResponse);
+    }
 
 
 

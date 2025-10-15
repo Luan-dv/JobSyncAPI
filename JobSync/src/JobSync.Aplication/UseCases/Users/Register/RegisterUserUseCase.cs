@@ -1,11 +1,14 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
 using FluentValidation.Results;
 using JobSync.Communication.Requests;
 using JobSync.Communication.Responses;
 using JobSync.Domain.Repositories;
 using JobSync.Domain.Repositories.User;
 using JobSync.Domain.Security.Cryptography;
-using System.Security.Cryptography.X509Certificates;
+using JobSync.Domain.Security.Tokens;
+using JobSync.Exception;
+using JobSync.Exception.ExceptionBase;
 
 namespace JobSync.Aplication.UseCases.Users.Register;
 public class RegisterUserUseCase : IRegisterUserUseCase
@@ -15,11 +18,13 @@ public class RegisterUserUseCase : IRegisterUserUseCase
     private readonly IUserReadOnlyRepository _userReadOnlyRepository;
     private readonly IUserWriteOnlyRepository _userWriteOnlyRepository;
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IAcessTokenGenerator _tokenGenerator;
 
     public RegisterUserUseCase(IMapper mapper,
         IPasswordEncripter passwordEncripter,
         IUserReadOnlyRepository userReadOnlyRepository,
         IUserWriteOnlyRepository userWriteOnlyRepository,
+        IAcessTokenGenerator tokenGenerator,
         IUnitOfWork unitOfWork)
     {
         _mapper = mapper;
@@ -27,25 +32,55 @@ public class RegisterUserUseCase : IRegisterUserUseCase
         _userReadOnlyRepository = userReadOnlyRepository;
         _userWriteOnlyRepository = userWriteOnlyRepository;
         _unitOfWork = unitOfWork;
+        _tokenGenerator = tokenGenerator;
 
     }
 
     public async Task<ResponseRegisteredUserJson> Execute(RequestRegisterUserJson request)
     {
-        //logic to register user
-    }
+        try
+        {
+            await Validate(request);
+            var user = _mapper.Map<Domain.Entities.User>(request);
+            user.Password = _passwordEncripter.Encrypt(request.Password);
+            user.UserIdentifier = Guid.NewGuid();
 
+            await _userWriteOnlyRepository.Add(user);
+            await _unitOfWork.Commit();
+
+            return new ResponseRegisteredUserJson
+            {
+                Name = user.Name,
+                Token = _tokenGenerator.Generate(user)
+            };
+        }
+        catch (System.Exception ex)
+        {
+            Console.WriteLine("Erro interno no RegisterUserUseCase: " + ex.ToString());
+            throw;
+        }
+    }
+    
 
     public async Task Validate(RequestRegisterUserJson request)
     {
         var result = new RegisterUserValidator().Validate(request);
         var emailExtist = await _userReadOnlyRepository.ExistActiveUserWithEmail(request.Email);
         var phoneExtist = await _userReadOnlyRepository.ExistActiveUserWithPhoneNumber(request.PhoneNumber);
-
+       
         if (emailExtist)
         {
-            result.Errors.Add(new ValidationFailure(string.Empty, ResourceErrorMesssages.));
+            result.Errors.Add(new ValidationFailure(string.Empty, ResourceErrorMessages.EMAIL_REQUIRED));
         }
-        //continuar lógica
+        if (phoneExtist)
+        {
+            result.Errors.Add(new ValidationFailure(string.Empty, ResourceErrorMessages.PHONE_NUMBER_REQUIRED));
+        }
+        
+        if (result.IsValid == false)
+        {
+            var errorMessages = result.Errors.Select(f => f.ErrorMessage).ToList();
+            throw new ErrorOnValidationExceptions(errorMessages);
+        }
     }
 }

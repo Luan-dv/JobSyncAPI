@@ -9,3 +9,17 @@ C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Exception\obj\Debug\net
 C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Exception\obj\Debug\net8.0\refint\JobSync.Exception.dll
 C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Exception\obj\Debug\net8.0\JobSync.Exception.pdb
 C:\Programação\Projetos\ApiJobSync\JobSync\src\JobSync.Exception\obj\Debug\net8.0\ref\JobSync.Exception.dll
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\bin\Debug\net8.0\JobSync.Exception.deps.json
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\bin\Debug\net8.0\JobSync.Exception.dll
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\bin\Debug\net8.0\JobSync.Exception.pdb
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\obj\Debug\net8.0\JobSync.Exception.ResourceErrorMessages.resources
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\obj\Debug\net8.0\JobSync.Exception.csproj.GenerateResource.cache
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\obj\Debug\net8.0\JobSync.Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\obj\Debug\net8.0\JobSync.Exception.AssemblyInfoInputs.cache
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\obj\Debug\net8.0\JobSync.Exception.AssemblyInfo.cs
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\obj\Debug\net8.0\JobSync.Exception.csproj.CoreCompileInputs.cache
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\obj\Debug\net8.0\JobSync.Exception.sourcelink.json
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\obj\Debug\net8.0\JobSync.Exception.dll
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\obj\Debug\net8.0\refint\JobSync.Exception.dll
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\obj\Debug\net8.0\JobSync.Exception.pdb
+C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Exception\obj\Debug\net8.0\ref\JobSync.Exception.dll

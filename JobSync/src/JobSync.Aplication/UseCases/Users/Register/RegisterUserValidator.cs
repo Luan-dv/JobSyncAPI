@@ -15,11 +15,13 @@ public class RegisterUserValidator : AbstractValidator<RequestRegisterUserJson>
         RuleFor(user => user.PhoneNumber)
             .NotEmpty()
             .WithMessage("telefone vazio") //trocar depois
+            .NotNull().WithMessage("telefone nulo")
             .Matches(@"^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$")
             .WithMessage("núimero inválido");
 
         RuleFor(user => user.Gender)
             .IsInEnum()
+
             .WithMessage("gênero inválido");
 
 
