@@ -1,5 +1,40 @@
 [
   {
+    "ContainingType": "JobSync.Api.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JobSync.Communication.Requests.RequestLoginJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobSync.Communication.Responses.ResponseRegisteredUserJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "JobSync.Communication.Responses.ResponseErrorJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      }
+    ]
+  },
+  {
     "ContainingType": "JobSync.Api.Controllers.UserController",
     "Method": "Register",
     "RelativePath": "api/User",

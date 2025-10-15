@@ -1,4 +1,5 @@
 ﻿using JobSync.Aplication.AutoMapper;
+using JobSync.Aplication.UseCases.Users.Login.DoLogin;
 using JobSync.Aplication.UseCases.Users.Register;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -20,6 +21,7 @@ public static class DependencyInjectionExtension
     {
  
         services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
+        services.AddScoped<IDoLoginUseCase, DoLoginUseCase>();
     }
 
 }
