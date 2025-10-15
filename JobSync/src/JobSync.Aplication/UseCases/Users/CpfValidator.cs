@@ -41,19 +41,19 @@ public partial class CpfValidator<T> : PropertyValidator<T, string>
 
         if (string.IsNullOrWhiteSpace(cleanedCpf) || cleanedCpf.Length != 11)
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.GENDER_REQUIRED);
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED);
             return false;
         }
 
         if (IsRepeatedDigits(cleanedCpf))
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.GENDER_REQUIRED);
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED);
             return false;
         }
 
         if (!IsCpfValid(cleanedCpf))
         {
-            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.GENDER_REQUIRED);
+            context.MessageFormatter.AppendArgument(ERROR_MESSAGE_KEY, ResourceErrorMessages.EMAIL_REQUIRED);
             return false;
         }
 

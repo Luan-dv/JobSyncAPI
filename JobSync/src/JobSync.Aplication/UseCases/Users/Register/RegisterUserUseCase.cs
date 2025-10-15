@@ -38,27 +38,23 @@ public class RegisterUserUseCase : IRegisterUserUseCase
 
     public async Task<ResponseRegisteredUserJson> Execute(RequestRegisterUserJson request)
     {
-        try
-        {
-            await Validate(request);
-            var user = _mapper.Map<Domain.Entities.User>(request);
-            user.Password = _passwordEncripter.Encrypt(request.Password);
-            user.UserIdentifier = Guid.NewGuid();
+       
+        
+        await Validate(request);
+        var user = _mapper.Map<Domain.Entities.User>(request);
+        user.Password = _passwordEncripter.Encrypt(request.Password);
+        user.UserIdentifier = Guid.NewGuid();
 
-            await _userWriteOnlyRepository.Add(user);
-            await _unitOfWork.Commit();
+        await _userWriteOnlyRepository.Add(user);
+        await _unitOfWork.Commit();
 
-            return new ResponseRegisteredUserJson
-            {
-                Name = user.Name,
-                Token = _tokenGenerator.Generate(user)
-            };
-        }
-        catch (System.Exception ex)
+        return new ResponseRegisteredUserJson
         {
-            Console.WriteLine("Erro interno no RegisterUserUseCase: " + ex.ToString());
-            throw;
-        }
+            Name = user.Name,
+            Token = _tokenGenerator.Generate(user)
+        };
+        
+        
     }
     
 

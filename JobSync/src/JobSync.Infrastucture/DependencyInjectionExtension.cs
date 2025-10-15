@@ -1,8 +1,10 @@
 ﻿using JobSync.Domain.Repositories;
 using JobSync.Domain.Repositories.User;
 using JobSync.Domain.Security.Cryptography;
+using JobSync.Domain.Security.Tokens;
 using JobSync.Infrastucture.DataAcess;
 using JobSync.Infrastucture.DataAcess.Repositories;
+using JobSync.Infrastucture.Security.Tokens;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,7 +16,7 @@ public static class DependencyInjectionExtension
     {
         AddDbContext(services, configuration);
         AddToken(services, configuration);
-        AddRepositories(services);
+        AddRepositories(services); 
 
 
         services.AddScoped<IPasswordEncripter, Security.Cryptography.Bcrypt>(); 
@@ -23,7 +25,10 @@ public static class DependencyInjectionExtension
     {
         var expirationTimeMinutes = configuration.GetValue<uint>("Settings:Jwt:ExpiresMinutes");
         var signingKey = configuration.GetValue<string>("Settings:Jwt:SigningKey");
-    }
+
+        services.AddScoped<IAcessTokenGenerator>(config => new JwtTokenGenerator(expirationTimeMinutes, signingKey!));
+    }   
+    
 
     private static void AddRepositories(IServiceCollection services)
     {

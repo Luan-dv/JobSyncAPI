@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobSync.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c87570c2f1db8d94be0c9b82ba859b53e2f6319")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e053eeaf416e71d23c6ecc322a78293138f745ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobSync.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobSync.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

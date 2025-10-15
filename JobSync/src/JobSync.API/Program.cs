@@ -1,5 +1,6 @@
 using JobSync.Api.Filters;
 using JobSync.Api.Middleware;
+using JobSync.Aplication;
 using JobSync.Infrastucture;
 using Microsoft.AspNetCore.Mvc.Filters;
 
@@ -18,6 +19,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)));  // consegue enxergar a exception
 
 builder.Services.AddInfrastructure(builder.Configuration); // extensão para adicionar injeção de dependencia
+builder.Services.AddApplication();
 
 var app = builder.Build();
 
