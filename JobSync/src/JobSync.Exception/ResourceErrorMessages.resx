@@ -156,6 +156,9 @@
   <data name="INVALID_PASSWORD_OR_EMAIL" xml:space="preserve">
     <value>Senha ou email inválido</value>
   </data>
+  <data name="MENOR_QUE_OITO" xml:space="preserve">
+    <value>A senha não pode ser menor que 8 dígitos</value>
+  </data>
   <data name="NAME_EMPTY" xml:space="preserve">
     <value>Nome vazio</value>
   </data>
@@ -173,6 +176,9 @@
   </data>
   <data name="PHONE_NUMBER_REQUIRED" xml:space="preserve">
     <value>É necessário conter número de Telefone</value>
+  </data>
+  <data name="SENHA_NULA" xml:space="preserve">
+    <value>A senha não pode ser nula</value>
   </data>
   <data name="TELEFONE_EMPTY" xml:space="preserve">
     <value>Telefone vazio</value>

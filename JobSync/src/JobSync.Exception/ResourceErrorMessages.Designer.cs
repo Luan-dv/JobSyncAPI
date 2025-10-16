@@ -178,6 +178,15 @@ namespace JobSync.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A senha não pode ser menor que 8 dígitos.
+        /// </summary>
+        public static string MENOR_QUE_OITO {
+            get {
+                return ResourceManager.GetString("MENOR_QUE_OITO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nome vazio.
         /// </summary>
         public static string NAME_EMPTY {
@@ -228,6 +237,15 @@ namespace JobSync.Exception {
         public static string PHONE_NUMBER_REQUIRED {
             get {
                 return ResourceManager.GetString("PHONE_NUMBER_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A senha não pode ser nula.
+        /// </summary>
+        public static string SENHA_NULA {
+            get {
+                return ResourceManager.GetString("SENHA_NULA", resourceCulture);
             }
         }
         

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobSync.Exception")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cf54b49cffd6715ac81af748ecf76a18fa66d00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ea7870171df37ba54a0c56b13181bba78b3b49f")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobSync.Exception")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobSync.Exception")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
