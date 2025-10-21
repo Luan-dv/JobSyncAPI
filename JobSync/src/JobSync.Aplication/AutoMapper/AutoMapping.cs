@@ -14,7 +14,7 @@ public class AutoMapping : Profile
     {
         CreateMap<RequestRegisterUserJson, User>()
             .ForMember(destUser => destUser.Password, config => config.Ignore());
-            //.ForMember(destUser => destUser.Cpf, config => config.Ignore());
+            
 
         
     }

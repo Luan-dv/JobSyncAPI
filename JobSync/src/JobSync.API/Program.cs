@@ -6,6 +6,18 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configurar CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5500" , "http://127.0.0.1:5500") // porta do seu front-end (ajuste se necessário)
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -34,6 +46,9 @@ if (app.Environment.IsDevelopment())
 app.UseMiddleware<CultureMiddleware>(); //configuração para usar middleware
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowLocalhost");
+
 
 app.UseAuthorization();
 

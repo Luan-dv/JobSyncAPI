@@ -39,12 +39,14 @@ public static class DependencyInjectionExtension
 
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration)
     {
-        
+        var connectionString = configuration.GetConnectionString("Connection"); ;
+        var version = new Version(8, 0, 42);
+        var serverVersion = new MySqlServerVersion(version);
 
-        var connectionString = configuration.GetConnectionString("Connection");
 
-        services.AddDbContext<JobSyncDbContext>(options =>
-            options.UseSqlite(connectionString));
+
+        services.AddDbContext<JobSyncDbContext>(config => config.UseMySql(connectionString, serverVersion));
+
     }
 
 }

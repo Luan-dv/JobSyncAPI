@@ -29,5 +29,3 @@ C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Infrastuctur
 C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\refint\JobSync.Infrastucture.dll
 C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\JobSync.Infrastucture.pdb
 C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\ref\JobSync.Infrastucture.dll
-C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Infrastucture\bin\Debug\net8.0\JobSync.Infrastucture.runtimeconfig.json
-C:\Programação\Projetos\ApiJobSync\JobSyncAPI\JobSync\src\JobSync.Infrastucture\obj\Debug\net8.0\JobSync.Infrastucture.genruntimeconfig.cache
